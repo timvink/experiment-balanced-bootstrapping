@@ -69,7 +69,7 @@ The most fair comparison between model variants would be to do a grid search wit
 
 ## Step 1: Our own RandomForest class
 
-Before we can adapt the bootstrapping strategy, we need to implement a normal random forest to make sure we're not making any mistakes. We can re-use scikit-learn's `DecisionTreeClassifer` and overwrite the bootstrapping of the rows. I've highlighted parts relevant parts of my `CustomRandomForestClassifier` class, full code can be found at TODO TODO TODO TODO.
+Before we can adapt the bootstrapping strategy, we need to implement a normal random forest to make sure we're not making any mistakes. We can re-use scikit-learn's `DecisionTreeClassifer` and overwrite the bootstrapping of the rows. I've highlighted parts relevant parts of my `CustomRandomForestClassifier` class, full code can be found at [github.com/timvink/experiment-balanced-bootstrapping](https://github.com/timvink/experiment-balanced-bootstrapping).
 
 The `.fit()` method bootstraps a sample of our data and fits a decision tree model and repeats this `n_estimator` times:
 
